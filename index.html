@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Linux Master</title>
+    </head>
+    <body>
+        <head>
+            <div class="container">
+                <div class="terminal-effect"></div>
+
+                <div class="command-line">
+                    root@linux:~$ <span class="typing-text">cat
+                        /profile/header.txt</span><span class="cursor">_</span>
+                </div>
+
+                <div class="logo-text">
+                    <div class="logo">
+                        <img src="./image/png/logo.webp" alt="Linux Logo">
+                    </div>
+                    <h1 class="neon-text">Linux Master</h1>
+                    <p class="profile-description">Kernel Hacker | Open Source
+                        Enthusiast</p>
+                </div>
+                <ul class="menu">
+                    <li><a href="#">Домой</a></li>
+                    <li><a href="#">Проект</a></li>
+                    <li><a href="#">Регистрация</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+        </head>
+
+        <div id="registerModal" class="modal">
+            <div class="modal-content">
+                <div class="terminal-header">
+                    <span>root@linux-site:~# <span
+                            class="typing-text">register_new_user.sh</span></span>
+                    <span class="cursor">_</span>
+                    <button class="close-btn">&times;</button>
+                </div>
+
+                <div class="terminal-body">
+                    <form id="registerForm">
+                        <div class="form-group">
+                            <label for="username">Имя пользователя:</label>
+                            <input type="text" id="username" required>
+                            <div class="underline"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" required>
+                            <div class="underline"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Пароль:</label>
+                            <input type="password" id="password" required>
+                            <div class="underline"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="confirm-password">Подтвердите
+                                пароль:</label>
+                            <input type="password" id="confirm-password"
+                                required>
+                            <div class="underline"></div>
+                        </div>
+
+                        <button type="submit" class="terminal-btn submit-btn">Зарегистрироваться</button>
+                    </form>
+                </div>
+
+                <div class="terminal-footer">
+                    <p>Уже зарегистрированы? <a href="#" id="loginLink">Войти</a></p>
+                </div>
+            </div>
+        </div>
+        <section class="distros-section">
+            <button id="registerBtn" class="terminal-btn">Регистрация</button>
+            <div class="terminal-header">
+                <div class="command-line">user@linux:~$ <span
+                        class="typing-text">ls /distros/</span><span
+                        class="cursor">_</span></div>
+            </div>
+
+            <div class="distros-info">
+                <h2 class="neon-text">Linux Distributions</h2>
+                <p class="info-text">Выберите свое оружие. У каждой раздачи есть
+                    своя философия и цель.</p>
+            </div>
+
+            <div class="distros-grid">
+
+                <div class="distro-card ubuntu">
+                    <div class="distro-logo">
+                        <img src="./image/png/ubuntu.webp" alt="Ubuntu">
+                    </div>
+                    <h3>Ubuntu</h3>
+                    <p class="distro-desc">User-friendly OS for beginners and
+                        professionals</p>
+                    <div class="distro-specs">
+                        <span>DE: GNOME</span>
+                        <span>Pkg: .deb</span>
+                    </div>
+                    <a href="#" class="distro-btn">Установить</a>
+                </div>
+
+                <div class="distro-card arch">
+                    <div class="distro-logo">
+                        <img src="./image/png/arch.webp" alt="Arch Linux">
+                    </div>
+                    <h3>Arch Linux</h3>
+                    <p class="distro-desc">Lightweight and flexible for advanced users</p>
+                    <div class="distro-specs">
+                        <span>DE: Custom</span>
+                        <span>Pkg: pacman</span>
+                    </div>
+                    <a href="#" class="distro-btn">Установить</a>
+                </div>
+
+                <div class="distro-card fedora">
+                    <div class="distro-logo">
+                        <img src="./image/png/fedora.webp" alt="Fedora">
+                    </div>
+                    <h3>Fedora</h3>
+                    <p class="distro-desc">Cutting-edge technologies from Red
+                        Hat</p>
+                    <div class="distro-specs">
+                        <span>DE: GNOME</span>
+                        <span>Pkg: .rpm</span>
+                    </div>
+                    <a href="#" class="distro-btn">Установить</a>
+                </div>
+
+                <div class="distro-card debian">
+                    <div class="distro-logo">
+                        <img src="./image/png/debian.webp" alt="Debian">
+                    </div>
+                    <h3>Debian</h3>
+                    <p class="distro-desc">Stable and universal system</p>
+                    <div class="distro-specs">
+                        <span>DE: Various</span>
+                        <span>Pkg: .deb</span>
+                    </div>
+                    <a href="#" class="distro-btn">Установить</a>
+                </div>
+            </div>
+        </section>
+        <section class="about-site-section">
+            <div class="terminal-header">
+                <span class="prompt">visitor@site:~$</span>
+                <span class="command">cat /about_site.txt</span>
+                <span class="cursor">_</span>
+            </div>
+
+            <div class="content-wrapper">
+                <div class="about-block">
+                    <h2 class="neon-heading">О нашем проекте</h2>
+                    <div class="info-grid">
+                        <div class="info-card">
+                            <div class="icon">🖥️</div>
+                            <h3>Наша миссия</h3>
+                            <p>Создать лучшее русскоязычное сообщество для
+                                Linux-энтузиастов всех уровней</p>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="icon">📚</div>
+                            <h3>База знаний</h3>
+                            <p>500+ статей, руководств и мануалов по работе с
+                                Linux</p>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="icon">👥</div>
+                            <h3>Сообщество</h3>
+                            <p>20,000+ активных пользователей в нашем
+                                сообществе</p>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="icon">🛠️</div>
+                            <h3>Ресурсы</h3>
+                            <p>Кастомные сборки, скрипты и конфиги для вашего
+                                дистрибутива</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stats-block">
+                    <h3 class="stats-heading">Статистика проекта:</h3>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-value" data-count="500">0</div>
+                            <div class="stat-label">Материалов</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value" data-count="20000">0</div>
+                            <div class="stat-label">Пользователей</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value" data-count="50">0</div>
+                            <div class="stat-label">Дистрибутивов</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value" data-count="1000">0</div>
+                            <div class="stat-label">Скриптов</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="script.js"></script>
+        </section>
+        <section class="hardware-section">
+            <div class="terminal-header">
+                <span class="prompt">user@linux:~$</span>
+                <span class="command">cat /hardware/recommended.txt</span>
+            </div>
+
+            <div class="hardware-grid">
+                <div class="hardware-card laptops">
+                    <h3>Ноутбуки</h3>
+                    <ul>
+                        <li>Dell XPS 13 (Ubuntu Edition) <span class="compatibility">100%</span></li>
+                        <li>Lenovo ThinkPad T-series <span class="compatibility">98%</span></li>
+                        <li>System76 Galago Pro <span class="compatibility">100%</span></li>
+                    </ul>
+                </div>
+
+                <div class="hardware-card wifi">
+                    <h3>Wi-Fi адаптеры</h3>
+                    <ul>
+                        <li>TP-Link Archer T4U <span class="compatibility">95%</span></li>
+                        <li>ASUS USB-AC68 <span class="compatibility">90%</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="dev-section">
+            <div class="terminal-header">
+                <span class="prompt">user@linux:~$</span>
+                <span class="command">vim /dev/scripts.sh</span>
+            </div>
+
+            <div class="dev-container">
+                <div class="dev-tabs">
+                    <button class="dev-tab active">Bash</button>
+                    <button class="dev-tab">Python</button>
+                    <button class="dev-tab">C</button>
+                </div>
+
+                <div class="code-container">
+                    <div class="code-header">
+                        <span class="red"></span>
+                        <span class="yellow"></span>
+                        <span class="green"></span>
+                        <span>script.sh</span>
+                    </div>
+                    <pre><code class="language-bash">
+#!/bin/bash
+# Мониторинг CPU
+while true; do
+  CPU_USAGE=$(top -bn1 | grep "Cpu(s)" | sed "s/.*, *\([0-9.]*\)%* id.*/\1/" | awk '{print 100 - $1}')
+  echo "CPU Load: $CPU_USAGE%"
+  sleep 1
+done</code></pre>
+                    <button class="copy-btn">Копировать</button>
+                </div>
+            </div>
+        </section>
+        <main class="linux-description">
+            <div class="terminal-header">
+                <span class="prompt">user@linux-site:~$</span>
+                <span class="command">whatis linux</span>
+                <span class="cursor">_</span>
+            </div>
+
+            <article class="linux-article">
+                <h2 class="neon-heading">Что такое Linux?</h2>
+
+                <div class="content-grid">
+                    <div class="text-content">
+                        <p><strong>Linux</strong> — это семейство Unix-подобных
+                            операционных систем на базе ядра Linux, созданного
+                            Линусом Торвальдсом в 1991 году.</p>
+
+                        <p>В отличие от проприетарных систем, Linux
+                            распространяется с <strong>открытым исходным
+                                кодом</strong>, что позволяет:</p>
+                        <ul class="linux-features">
+                            <li>Свободно использовать и модифицировать
+                                систему</li>
+                            <li>Создавать собственные дистрибутивы</li>
+                            <li>Гарантировать прозрачность и безопасность</li>
+                        </ul>
+                    </div>
+
+                    <div class="image-content">
+                        <div class="terminal-window">
+                            <div class="terminal-bar">
+                                <span class="term-btn red"></span>
+                                <span class="term-btn yellow"></span>
+                                <span class="term-btn green"></span>
+                            </div>
+                            <pre class="terminal-code">
+<span class="code-line"><span class="prompt">$</span> uname -a</span>
+<span class="code-line">Linux hostname 5.15.0-76-generic #83-Ubuntu</span>
+<span class="code-line"><span class="prompt">$</span> <span class="cursor">_</span></span>
+          </pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="key-points">
+                    <div class="point">
+                        <div class="point-icon">🐧</div>
+                        <h3>Свобода</h3>
+                        <p>Бесплатное использование и модификация</p>
+                    </div>
+
+                    <div class="point">
+                        <div class="point-icon">🛡️</div>
+                        <h3>Безопасность</h3>
+                        <p>Меньше уязвимостей, чем в других ОС</p>
+                    </div>
+
+                    <div class="point">
+                        <div class="point-icon">💻</div>
+                        <h3>Универсальность</h3>
+                        <p>Работает на любом оборудовании</p>
+                    </div>
+                </div>
+            </article>
+        </main>
+        <footer class="site-footer">
+            <div class="footer-terminal">
+                <div class="terminal-line">
+                    <span class="prompt">user@linux-site:~$</span>
+                    <span class="command">cat /site/footer.txt</span>
+                    <span class="cursor">_</span>
+                </div>
+                <div class="terminal-output">
+                    <p>Свяжитесь с нами: <a href="mailto:contact@linux-site.ru">contact@linux-site.ru</a></p>
+                    <p>© 2023 Linux-Site.ru | Все права защищены</p>
+                </div>
+            </div>
+
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="/">Главная</a></li>
+                        <li><a href="/distros">Дистрибутивы</a></li>
+                        <li><a href="/tutorials">Руководства</a></li>
+                        <li><a href="/forum">Форум</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Сообщество</h3>
+                    <ul>
+                        <li><a href="https://t.me/linux_site"
+                                target="_blank">Telegram</a></li>
+                        <li><a href="https://vk.com/linux_site"
+                                target="_blank">VK</a></li>
+                        <li><a href="https://github.com/linux-site" target="_blank">GitHub</a></li>
+                        <li><a href="/donate">Поддержать проект</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Ресурсы</h3>
+                    <ul>
+                        <li><a href="/docs">Документация</a></li>
+                        <li><a href="/scripts">Скрипты</a></li>
+                        <li><a href="/iso">ISO-образы</a></li>
+                        <li><a href="/sitemap">Карта сайта</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>Сайт работает на <span class="tech-highlight">Linux</span> +
+                    <span class="tech-highlight">Nginx</span></p>
+                <p>Исходный код доступен на <a href="https://github.com/linux-site" target="_blank">GitHub</a></p>
+            </div>
+        </footer>
+    </body>
+</html>
