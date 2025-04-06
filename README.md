@@ -23,7 +23,7 @@
 
 1. Клонируйте репозиторий:
 ```bash
-git clone https://github.com/yourname/linux-master.git
+git clone https://github.com/gerich15/linux-master.git
 ```
 2. Откройте в браузере:
 ```bash
@@ -76,9 +76,9 @@ function typeWriter(element, text, speed = 100) {
 
 ## 👥 Авторы
 
-- [Ваше Имя](https://github.com/yourname)  
-  [![Telegram](https://img.shields.io/badge/-Telegram-0088cc?logo=telegram)](https://t.me/yourprofile)
+- [Ваше Имя](https://github.com/gerich15)  
+  [![Telegram](https://img.shields.io/badge/-Telegram-0088cc?logo=telegram)](https://t.me/@tamtut15blud)
 
 ## 📜 Лицензия
 
-MIT © 2023 [Linux Master](https://github.com/yourname/linux-master)
+MIT © 2023 [Linux Master](https://github.com/gerich15/linux-master)
